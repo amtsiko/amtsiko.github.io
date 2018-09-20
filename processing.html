@@ -16,6 +16,14 @@
 <link rel='stylesheet' id='wp-jquery-gallery-galleryview-style-css'  href='https://lnf.umich.edu/wp-content/plugins/wp-jquery-gallery/galleryview/css/jquery.galleryview-3.0-dev.css?ver=3.9.25' type='text/css' media='all' />
 <link rel='stylesheet' id='wp-jquery-gallery-adgallery-style-css'  href='https://lnf.umich.edu/wp-content/plugins/wp-jquery-gallery/adgallery/lib/jquery.ad-gallery.css?ver=3.9.25' type='text/css' media='all' />
 <link rel='stylesheet' id='tool-list-style-css'  href='https://lnf.umich.edu/wp-content/plugins/lnf-plugin-pack-v2/tool-list/tool-list.css?ver=1.0.0' type='text/css' media='all' />
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides{
+        display: none;
+    }
+</style>
+
 <!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.4 - Universal disabled - https://www.monsterinsights.com/ -->
 <script type="text/javascript">
 
@@ -115,9 +123,9 @@
                     <h1 class="entry-title">Process Services</h1>
             
                     <div class="entry-content">
-                        <h2>Overview</h2>
+                        <h3>Overview</h3>
                         <p>PLACEHOLDER: The University of Michigan Lurie Nanofabrication Facility (LNF) includes 11,000 sq. ft. of class 10/100/1000 cleanroom and 2,500 sq. ft/ of quasi class 10,000 space with a BiosSafety Level 2 space. The LNF provides a wide range of fabrication and characterization capabilities and our highly experienced scientists and engineers are here to help you with your process needs. The LNF offers process services to researchers unable to come work onsite themselves.</p>
-                        <h2>Here are examples of services that we offer</h2>
+                        <h3>Here are examples of services that we offer</h3>
                         <ul>
                             <li>E-beam lithography</li>
                             <li>DRIE</li>
@@ -135,17 +143,36 @@
                 </div><!-- end .postclass -->
             </div><!-- end #content -->
     <div id="sidebar" class="sidebar widget-area">
-    <div id="enews-3" class="widget enews-widget"><div class="widget-wrap"><div class="enews"><h4 class="widgettitle">Stay up to date with LNF</h4>
-    <p>Be the first to receive LNF news, updates, and event info.</p>
-                <form id="subscribe" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=LurieNanofabricationFacility', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" value="Enter your email address..." id="subbox" onfocus="if (this.value == 'Enter your email address...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter your email address...';}" name="email"/><input type="hidden" value="LurieNanofabricationFacility" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Go" id="subbutton" /></form>
-                </div></div></div>
-    <div id="text-3" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><p><iframe width="240" height="122" src="https://www.youtube.com/embed/1FznGgpNUCQ?rel=0" frameborder="0" allowfullscreen></iframe></p></div>
-            </div></div>
-    <div id="text-9" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><p align="center"><a href="https://lnf.umich.edu/index.php/about-lnf/contact-us/"><img src="https://lnf.umich.edu/wp-content/uploads/2012/02/contact-us-image.png" align="center" title="Contact the LNF" alt="Contact the LNF"></img></a></p></div>
-            </div></div>
-    <div id="stray_widgets-2" class="widget widget_stray_quotes"><div class="widget-wrap"><h4 class="widgettitle">The Buzz About the LNF...</h4>
-    <div class="stray_quote-2" onclick="newQuote('testimonials','','2','https://lnf.umich.edu/wp-content/plugins/stray-quotes/','1','0','','0','','loading...','')" >&#8220;Nadine was one of the people that ran the cleanroom training session I was in and she was fantastic. She explained everything very well, was very patient, and made sure everyone could hear the explanations. She was also very nice and answered all my questions wonderfully. Nadine was very welcoming to us and was great to work with.&#8221;</div></div></div>
-    </div>	</div><!-- end #content-sidebar-wrap -->
+        <div id="stray_widgets-2" class="widget widget_stray_quotes">
+            <div class="widget-wrap">
+                <img class="lnfSlides" src="https://lnf.umich.edu/wp-content/uploads/jquery-gallery/getting-access/slide04.jpg" style="width:100%">
+                <img class="lnfSlides" src="https://lnf.umich.edu/wp-content/uploads/jquery-gallery/getting-access/slide04.jpg" style="width:100%">
+                <img class="lnfSlides" src="https://lnf.umich.edu/wp-content/uploads/jquery-gallery/getting-access/slide04.jpg" style="width:100%">
+                <img class="lnfSlides" src="https://lnf.umich.edu/wp-content/uploads/jquery-gallery/getting-access/slide04.jpg" style="width:100%">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("lnfSlides");
+                    if (n > x.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = x.length}
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+        </div>
+    </div><!-- end #content-sidebar-wrap -->
         </div><!-- end #inner --><div id="footer-widgeted">
         <div class="wrap">
             <div class="footer-widgeted-1">
