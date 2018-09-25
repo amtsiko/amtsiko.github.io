@@ -123,21 +123,20 @@
                 <div class="col">
                     <ul>
                         <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
+                        <li>High aspect ratio trenches > 50:1</li>
+                        <li>Features < 100nm sidewall roughness < 10nm</li>
+                        <li>Fast etch rates > 13µm/min</li>
+                        <li>Smooth wall etches side-wall roughness < 10nm</li>
+                        <li>Stop on buried insulator without footing</li>
                     </ul>
                 </div>
                 <div class="col">
                     <ul>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
-                        <li>Sample size up to 150mm wafers</li>
+                        <li>Resist selectivity > 160:1</li>
+                        <li>Oxide selectivity > 500:1</li>
+                        <li>Run to run variance < 5%</li>
+                        <li>Non-uniformity < 5%</li>
+                        <li>Wafer thinning at 4µm/min</li>
                     </ul>
                 </div>
             </div>
@@ -149,7 +148,39 @@
 		</div><!-- end .entry-content -->
 		
 	</div><!-- end .postclass -->
-		</div><!-- end #content -->
+    </div><!-- end #content -->
+    <div id="sidebar" class="sidebar widget-area">
+      <div id="stray_widgets-2" class="widget widget_stray_quotes">
+          <div class="widget-wrap">
+              <div class="slideContainer">
+                      <button class="w3-button w3-black float-left" onclick="plusDivs(-1)">&#10094;</button>
+                      <button class="w3-button w3-black float-right" onclick="plusDivs(1)">&#10095;</button>
+                      <img class="lnfSlides" src="http://gdurl.com/FX8e" style="width:100%">
+                      <img class="lnfSlides" src="http://gdurl.com/iYRo" style="width:100%">
+                      <img class="lnfSlides" src="http://gdurl.com/pRgU" style="width:100%">
+              </div>
+          </div>
+          <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+                  showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("lnfSlides");
+                  if (n > x.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+              }
+          </script>
+      </div>
+      </div>
 			</div><!-- end #content-sidebar-wrap -->
 	</div><!-- end #inner --><div id="footer-widgeted">
 	<div class="wrap">
