@@ -1,9 +1,9 @@
 {
 "companyName": "BitOfun",
-"productName": "p1_gold",
-"dataUrl": "web.data.unityweb",
-"wasmCodeUrl": "web.wasm.code.unityweb",
-"wasmFrameworkUrl": "web.wasm.framework.unityweb",
+"productName": "p1_gold1",
+"dataUrl": "web2.data.unityweb",
+"wasmCodeUrl": "web2.wasm.code.unityweb",
+"wasmFrameworkUrl": "web2.wasm.framework.unityweb",
 "TOTAL_MEMORY": 268435456,
 "graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
