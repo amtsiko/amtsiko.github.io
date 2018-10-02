@@ -1,27 +1,34 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title>Portfolio</title>
-    </head>
-    <body class ="text-center">
-
-    <h1>The Portfolio of Alicia Sikorski</h1>
-
-    <h2>Projects</h2>
-    
-    <div class="card d-flex justify-content-center m-5" style="width: 18rem;">
-      <img class="card-img-top" src="https://icon2.kisspng.com/20180710/pbk/kisspng-super-metroid-super-nintendo-entertainment-system-sprite-metroid-5b450465bb5999.0417408015312497657674.jpg" alt="Card image cap" height="150" width="50px">
-      <div class="card-body">
-        <h5 class="card-title">Metroid (Unity remaster)</h5>
-        <p class="card-text">A remaster of the beginning levels of Metroid (NES), as well as a custom level.</p>
-        <a href="/metroid" class="btn btn-primary">Play game</a>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Metroid | Unity WebGL Player</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webbuild.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <!-- info for people that want it! 
+    <h1>Metroid (Unity remaster) + Custom Level</h1>
+    <h2>Background</h2>
+    <p>Metroid is a class game on the NES that helped bring back the dying gaming industry in America in the 1980s. We were tasked with recreating the first few levels of this classic NES game in Unity, as well as a custom level that features a new mechanic. Our time frame for this project was about 3 weeks.</p>
+    <h2>Custom Level</h2>
+    <p>The idea came from wanting to give Samus the use of a skateboard, in our game a "skreeboard". The skreeboard has many uses. It can protect you feet (allowing the player to jump on enemies without damage), you can use it as a shield, and you can use it as a weapon against enemies. Our level is designed to highlight these features, starting with a horizontal platformer where the player must hop across the heads of enemies to stay alive. The second part of the level makes the player fight a boss enemy that lunges at the player. Bullets and missiles don't do much damamge to the enemy, but whacking it with the board when it's in its vunerable state (achieved by knocking it back with the board when shielding) does a lot.</p>
+    <h2>Controls</h2>
+    <p>[z] - jump, [x] = use weapon, ←/→ - move left/right, ↑/↓ - look up/change state, [right shift] - change equipped weapon, [tab] - warp to/from custom level</p>
+    -->
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 640px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">p1_gold2</div>
       </div>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
+  </body>
 </html>
