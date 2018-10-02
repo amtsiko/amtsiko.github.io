@@ -170,41 +170,41 @@
 
                 </div><!-- end .postclass -->
             </div><!-- end #content -->
-    <div id="sidebar" class="sidebar widget-area">
-        <div id="stray_widgets-2" class="widget widget_stray_quotes">
-            <div class="widget-wrap">
-                <div class="slideContainer">
-                        <button class="w3-button w3-black float-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button w3-black float-right" onclick="plusDivs(1)">&#10095;</button>
-                        <img class="lnfSlides" src="http://gdurl.com/9AFJ" style="width:100%">
-                        <img class="lnfSlides" src="http://gdurl.com/rxp6" style="width:100%">
-                        <img class="lnfSlides" src="http://gdurl.com/LgjD" style="width:100%">
-                        <img class="lnfSlides" src="http://gdurl.com/z1zS" style="width:100%">
-                        <img class="lnfSlides" src="http://gdurl.com/7tgl" style="width:100%">
+            <div id="sidebar" class="sidebar widget-area">
+                <div id="stray_widgets-2" class="widget widget_stray_quotes">
+                    <div class="widget-wrap">
+                        <div class="slideContainer">
+                            <button class="w3-button w3-black float-left" onclick="plusDivs(-1)">&#10094;</button>
+                            <button class="w3-button w3-black float-right" onclick="plusDivs(1)">&#10095;</button>
+                            <img class="lnfSlides" src="http://gdurl.com/9AFJ" style="width:100%">
+                            <img class="lnfSlides" src="http://gdurl.com/rxp6" style="width:100%">
+                            <img class="lnfSlides" src="http://gdurl.com/LgjD" style="width:100%">
+                            <img class="lnfSlides" src="http://gdurl.com/z1zS" style="width:100%">
+                            <img class="lnfSlides" src="http://gdurl.com/7tgl" style="width:100%">
+                        </div>
+                    </div>
+                    <script>
+                        var slideIndex = 1;
+                        showDivs(slideIndex);
+
+                        function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                        }
+
+                        function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("lnfSlides");
+                            if (n > x.length) {slideIndex = 1}    
+                            if (n < 1) {slideIndex = x.length}
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";  
+                            }
+                            x[slideIndex-1].style.display = "block";  
+                        }
+                    </script>
                 </div>
             </div>
-            <script>
-                var slideIndex = 1;
-                showDivs(slideIndex);
-
-                function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                }
-
-                function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("lnfSlides");
-                    if (n > x.length) {slideIndex = 1}    
-                    if (n < 1) {slideIndex = x.length}
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";  
-                    }
-                    x[slideIndex-1].style.display = "block";  
-                }
-            </script>
-        </div>
-        </div>
-    </div><!-- end #content-sidebar-wrap -->
+        </div><!-- end #content-sidebar-wrap -->
         </div><!-- end #inner --><div id="footer-widgeted">
         <div class="wrap">
             <div class="footer-widgeted-1">
