@@ -132,78 +132,88 @@
 			<input type="text" value="Search this website &hellip;" name="s" class="s" onfocus="if (this.value == 'Search this website &hellip;') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website &hellip;';}" />
 			<input type="submit" class="searchsubmit" value="Search" />
 		</form>
-	</li></ul></div><!-- end .wrap --></div><div id="inner">	<div id="content-sidebar-wrap">
-				<div id="content" class="hfeed">
-				<div class="post-5 page type-page status-publish hentry">
+	</li></ul></div>
+            
+<!-- end .wrap -->
+</div>
+<div id="inner">	
+    <div id="content-sidebar-wrap">
+        <div id="content" class="hfeed">
+            <div class="post-4006 page type-page status-publish hentry">
 
-<h1 class="entry-title">DRIE: High-Aspect Ratio Etching</h1>
+                <!--new stuff-->
+                <h1 class="entry-title">Deep Reaction Ion Etching (DRIE)</h1>
+                <div class="entry-content">
+                    <h3 class="titleInfo">Overview</h3>
+                    <p>Deep Reaction Ion Etching (DRIE) has been an enabling technology available at the Lurie Nanofabrication Facility for more than a decade that has promoted tremendous advancements in various technologies -- most notable MEMS.</p>
+                </div>
+                <p><a name="capabilities"></a></p>
+                <h3 class="titleInfo">Key Capabilities</h2>
+                <div class="row">
+                    <div class="col">
+                        <ul>
+                            <li>Sample size up to 150mm wafers</li>
+                            <li>High aspect ratio trenches > 50:1</li>
+                            <li>Features < 100nm sidewall roughness < 10nm</li>
+                            <li>Fast etch rates > 13µm/min</li>
+                            <li>Smooth wall etches side-wall roughness < 10nm</li>
+                            <li>Stop on buried insulator without footing</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li>Resist selectivity > 160:1</li>
+                            <li>Oxide selectivity > 500:1</li>
+                            <li>Run to run variance < 5%</li>
+                            <li>Non-uniformity < 5%</li>
+                            <li>Wafer thinning at 4µm/min</li>
+                        </ul>
+                    </div>
+                </div>
+                </div><!-- end .entry-content -->
 
-<div class="entry-content">
-    <p><a name="overview"></a></p>
-    <h3 class="titleInfo">Overview</h2>
-    <div align="justify">
-    <p>Deep Reaction Ion Etching (DRIE) has been an enabling technology available at the Lurie Nanofabrication Facility for more than a decade that has promoted tremendous advancements in various technologies -- most notable MEMS.</p>
-    </div>
-    <p><a name="capabilities"></a></p>
-    <h3 class="titleInfo">Key Capabilities</h2>
-    <div class="row">
-        <div class="col">
-            <ul>
-                <li>Sample size up to 150mm wafers</li>
-                <li>High aspect ratio trenches > 50:1</li>
-                <li>Features < 100nm sidewall roughness < 10nm</li>
-                <li>Fast etch rates > 13µm/min</li>
-                <li>Smooth wall etches side-wall roughness < 10nm</li>
-                <li>Stop on buried insulator without footing</li>
-            </ul>
+                <!-- end new stuff-->
+
+            </div><!-- end .postclass -->
+        </div><!-- end #content -->
+<div id="sidebar" class="sidebar widget-area">
+    <div id="stray_widgets-2" class="widget widget_stray_quotes">
+        <div class="widget-wrap">
+            <div class="slideContainer">
+                    <button class="w3-button w3-black float-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black float-right" onclick="plusDivs(1)">&#10095;</button>
+                    <img class="lnfSlides" src="http://gdurl.com/FX8e" style="width:100%">
+                    <img class="lnfSlides" src="http://gdurl.com/iYRo" style="width:100%">
+                    <img class="lnfSlides" src="http://gdurl.com/pRgU" style="width:100%">
+            </div>
         </div>
-        <div class="col">
-            <ul>
-                <li>Resist selectivity > 160:1</li>
-                <li>Oxide selectivity > 500:1</li>
-                <li>Run to run variance < 5%</li>
-                <li>Non-uniformity < 5%</li>
-                <li>Wafer thinning at 4µm/min</li>
-            </ul>
-        </div>
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("lnfSlides");
+                if (n > x.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+            }
+        </script>
     </div>
-  </div><!-- end .entry-content -->
-		
-	</div><!-- end .postclass -->
-  </div><!-- end #content -->
-    <div id="sidebar" class="sidebar widget-area">
-      <div id="stray_widgets-2" class="widget widget_stray_quotes">
-          <div class="widget-wrap">
-              <div class="slideContainer">
-                      <button class="w3-button w3-black float-left" onclick="plusDivs(-1)">&#10094;</button>
-                      <button class="w3-button w3-black float-right" onclick="plusDivs(1)">&#10095;</button>
-                      <img class="lnfSlides" src="http://gdurl.com/FX8e" style="width:100%">
-                      <img class="lnfSlides" src="http://gdurl.com/iYRo" style="width:100%">
-                      <img class="lnfSlides" src="http://gdurl.com/pRgU" style="width:100%">
-              </div>
-          </div>
-          <script>
-              var slideIndex = 1;
-              showDivs(slideIndex);
+    </div>
+</div><!-- end #content-sidebar-wrap -->
 
-              function plusDivs(n) {
-                  showDivs(slideIndex += n);
-              }
 
-              function showDivs(n) {
-                  var i;
-                  var x = document.getElementsByClassName("lnfSlides");
-                  if (n > x.length) {slideIndex = 1}    
-                  if (n < 1) {slideIndex = x.length}
-                  for (i = 0; i < x.length; i++) {
-                      x[i].style.display = "none";  
-                  }
-                  x[slideIndex-1].style.display = "block";  
-              }
-          </script>
-      </div>
-      </div>
-			</div><!-- end #content-sidebar-wrap -->
+
+
+
 	</div><!-- end #inner --><div id="footer-widgeted">
 	<div class="wrap">
     	<div class="footer-widgeted-1">
